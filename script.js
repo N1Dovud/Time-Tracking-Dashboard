@@ -34,7 +34,7 @@ function weekly() {
     monthlyBtn.style.color = "hsl(235, 45%, 61%)";
     dailyBtn.style.color = "hsl(235, 45%, 61%)";
 }
-window.addEventListener("load", weekly);
+window.addEventListener("DOMContentLoaded", weekly);
 dailyBtn.addEventListener("click", () => {
     statElements.forEach((element, index) => {
         element.h2.textContent = `${data[index].timeframes.daily.current}hrs`;
